@@ -2,7 +2,19 @@ import com.sun.jdi.IntegerValue;
 
 import java.util.*;
 import java.util.Random;
+
+/**
+ * fügt zahlen zu listen hinzu, löscht zahlen, gibt die summe der elemente zurück und die Liste als String
+ * @author Julia Stuppnig
+ * @version 06.05.2025
+ */
 public class ListTester {
+
+    /**
+     * liste wird mit anzahl an zahlen befüllt
+     * @param liste eingegebene liste
+     * @param anzahl anzahl der zahlen in liste
+     */
     public static void addEnd(List<Integer> liste, int anzahl){
         liste = new ArrayList<>();
         Random random = new Random();
@@ -13,6 +25,11 @@ public class ListTester {
         }
     }
 
+    /**
+     * fügt am anfang der liste zahlen hinzu statt am ende
+     * @param liste die gegebene liste
+     * @param anzahl die anzahl der zahlen
+     */
     public static void addFirst(List<Integer> liste, int anzahl){
         liste = new ArrayList<>();
         Random random = new Random();
@@ -23,6 +40,10 @@ public class ListTester {
         }
     }
 
+    /**
+     * löscht jedes 2. element in der liste
+     * @param liste die gegebene liste
+     */
     public static void deleteHalf(List<Integer> liste){
         liste = new ArrayList<>();
         Iterator<Integer> it = liste.iterator();
@@ -33,6 +54,11 @@ public class ListTester {
         }
     }
 
+    /**
+     * summiert alle elemente mittels iterator
+     * @param liste die gegebene liste
+     * @return die summe
+     */
     public static int summeIterator(List<Integer> liste){
         liste = new ArrayList<>();
         Iterator<Integer> it = liste.iterator();
@@ -43,6 +69,11 @@ public class ListTester {
         return summe;
     }
 
+    /**
+     * summiert alle elemente der liste mittels index
+     * @param liste die gegebene liste
+     * @return die summe
+     */
     public static int summeIndex(List<Integer> liste){
         liste = new ArrayList<>();
         int summe = 0;
@@ -52,6 +83,11 @@ public class ListTester {
         return summe;
     }
 
+    /**
+     * fasst alle elemente in einem string mittels iterator zusammen
+     * @param liste die gegebene liste
+     * @return der String
+     */
     public static String listeIterator(List<Integer> liste){
         liste = new ArrayList<>();
         String alleElemente = "";
@@ -63,6 +99,11 @@ public class ListTester {
         return alleElemente;
     }
 
+    /**
+     * fasst alle elemente in einem string mittels index zusammen
+     * @param liste die gegebene liste
+     * @return der String
+     */
     public static String listeIndex(List<Integer> liste){
         liste = new ArrayList<>();
         String alleElemente = "";
