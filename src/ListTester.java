@@ -16,7 +16,6 @@ public class ListTester {
      * @param anzahl anzahl der zahlen in liste
      */
     public static void addEnd(List<Integer> liste, int anzahl){
-        liste = new ArrayList<>();
         Random random = new Random();
 
         for (int i = 0; i < anzahl; i++) {
@@ -31,7 +30,6 @@ public class ListTester {
      * @param anzahl die anzahl der zahlen
      */
     public static void addFirst(List<Integer> liste, int anzahl){
-        liste = new ArrayList<>();
         Random random = new Random();
 
         for (int i = 0; i < anzahl; i++) {
@@ -45,7 +43,6 @@ public class ListTester {
      * @param liste die gegebene liste
      */
     public static void deleteHalf(List<Integer> liste){
-        liste = new ArrayList<>();
         Iterator<Integer> it = liste.iterator();
         int i = 1;
         while(it.hasNext()){
@@ -60,7 +57,6 @@ public class ListTester {
      * @return die summe
      */
     public static int summeIterator(List<Integer> liste){
-        liste = new ArrayList<>();
         Iterator<Integer> it = liste.iterator();
         int summe = 0;
         while(it.hasNext()){
@@ -75,7 +71,6 @@ public class ListTester {
      * @return die summe
      */
     public static int summeIndex(List<Integer> liste){
-        liste = new ArrayList<>();
         int summe = 0;
         for(int i = 0; i<liste.size(); i++){
             summe = summe + liste.get(i);
@@ -89,7 +84,6 @@ public class ListTester {
      * @return der String
      */
     public static String listeIterator(List<Integer> liste){
-        liste = new ArrayList<>();
         String alleElemente = "";
         Iterator<Integer> it = liste.iterator();
 
@@ -105,7 +99,6 @@ public class ListTester {
      * @return der String
      */
     public static String listeIndex(List<Integer> liste){
-        liste = new ArrayList<>();
         String alleElemente = "";
 
         for(int i = 0; i<liste.size(); i++){
